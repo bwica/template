@@ -312,11 +312,11 @@ class GroupController(base.BaseController):
 
             facets = OrderedDict()
 
-            default_facet_titles = {'organization': _('Organizations'),
-                                    'groups': _('Groups'),
+            default_facet_titles = {'organization': _('Unit'),
+                                    'groups': _('Tematik'),
                                     'tags': _('Tags'),
-                                    'res_format': _('Formats'),
-                                    'license_id': _('Licenses')}
+                                    'res_format': _('Format'),
+                                    'license_id': _('Lisensi')}
 
             for facet in h.facets():
                 if facet in default_facet_titles:

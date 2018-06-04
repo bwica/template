@@ -1,6 +1,6 @@
 {% extends "page.html" %}
 
-{% block subtitle %}{{ c.group_dict.display_name }} - {{ _('Organizations') }}{% endblock %}
+{% block subtitle %}{{ c.group_dict.display_name }} - {{ _('Unit') }}{% endblock %}
 
 {% block breadcrumb_content %}
   <li>{% link_for _('Organizations'), controller='organization', action='index' %}</li>
@@ -9,13 +9,13 @@
 
 {% block content_action %}
   {% if h.check_access('organization_update', {'id': c.group_dict.id}) %}
-    {% link_for _('Manage'), controller='organization', action='edit', id=c.group_dict.name, class_='btn', icon='wrench' %}
+    {% link_for _('Edit'), controller='organization', action='edit', id=c.group_dict.name, class_='btn', icon='wrench' %}
   {% endif %}
 {% endblock %}
 
 {% block content_primary_nav %}
-  {{ h.build_nav_icon('organization_read', _('Datasets'), id=c.group_dict.name) }}
-  {{ h.build_nav_icon('organization_activity', _('Activity Stream'), id=c.group_dict.name, offset=0) }}
+  {{ h.build_nav_icon('organization_read', _(' Dataset '), id=c.group_dict.name) }}
+  {{ h.build_nav_icon('organization_activity', _('Aktivitas'), id=c.group_dict.name, offset=0) }}
   {{ h.build_nav_icon('organization_about', _('About'), id=c.group_dict.name) }}
 {% endblock %}
 

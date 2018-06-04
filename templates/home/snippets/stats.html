@@ -2,22 +2,22 @@
 
   <div class="inner">
     <h3>Statistik Portal Data APBN </br>Kementerian Keuangan</h3><hr>
-    <ul style=" text-align: center;padding-left: 20px;">
+    <ul style=" text-align: center; text-transfor: uppercase;">
       {% block stats_group %}
       <li style=" width: 30%;">
-        <a href="{{ h.url_for(controller='package', action='search') }}" style=" color: white;">
+        <a href="{{ h.url_for(controller='package', action='search') }}" style=" color: white; display:inline;">
           <b>{{ h.SI_number_span(stats.dataset_count) }}</b>
           {{ _('dataset') if stats.dataset_count == 1 else _('dataset') }}
         </a>
       </li>
       <li style=" width: 30%;">
-        <a href="{{ h.url_for(controller='organization', action='index') }}" style=" color: white;">
+       <a href="{{ h.url_for(controller='organization', action='index') }}" style=" color: white;display:inline;">
           <b>{{ h.SI_number_span(stats.organization_count) }}</b>
-          {{ _('Instansi') if stats.organization_count == 1 else _('Instansi') }}
+          {{ _('Unit') if stats.organization_count == 1 else _('Unit') }}
         </a>
       </li>
       <li>
-        <a href="{{ h.url_for(controller='group', action='index') }}" style=" color: white;">
+        <a href="{{ h.url_for(controller='group', action='index') }}" style=" color: white;display: inline;">
           <b>{{ h.SI_number_span(stats.group_count) }}</b>
           {{ _('group') if stats.group_count == 1 else _('Tematik') }}
         </a>

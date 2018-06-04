@@ -12,29 +12,9 @@
   <div class="homepage layout-{{ homepage_style }}">
 	<center>
 	<div class="bg">
-	<img class="bg mySlides" src="/base/images/backgroundutama/home.jpg" style="width:100%; margin-left:0px;">
-	  <img class="bg mySlides" src="/base/images/backgroundutama/home2.jpg" style="width:100%; margin-left:0px;">
-		<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
-</script>
-</div>
-	<div class="container sip">
-	<h1 class="judul text-white">Portal Data</h1>
-	<h1 class="judul text-white">APBN Kementerian Keuangan</h1><br/>
-	<h4 class="text-white"> TEMUKAN
+	<div class="container">
+	<h1 class="judul">Portal Data APBN Kementerian Keuangan</h1>
+	<h4> TEMUKAN
 	{% snippet 'home/snippets/stats2.html' %} DI SINI.</h4>
 	<div class="panah"></div>
 	<form id="dataset-search-form" action="/dataset" class="search-form" method="get" data-module="select-switch">
@@ -49,7 +29,7 @@ function carousel() {
 	</div>
 	</div>
 	<div class="container">
-	<div class="box stats" style="margin-top:50px;">
+	<div class="box stats">
 	<div class="flex-container" style=" text-transform: uppercase;">
 		<div class="flex-item zoom">
 			<a href="group/asumsi-dasar-ekonomi-makro"><img width="60" src="/base/icon/asumsi.png">            

@@ -284,7 +284,8 @@ def make_map():
     # group
     map.redirect('/groups', '/group')
     map.redirect('/groups/{url:.*}', '/group/{url}')
-
+    map.redirect('/tematik', '/group')	
+    
     # These named routes are used for custom group forms which will use the
     # names below based on the group.type ('group' is the default type)
     with SubMapper(map, controller='group') as m:
@@ -316,9 +317,11 @@ def make_map():
         m.connect('group_read', '/group/{id}', action='read',
                   ckan_icon='sitemap')
 
+        map.redirect('/organization', '/unit')
+	
     # organizations these basically end up being the same as groups
     with SubMapper(map, controller='organization') as m:
-        m.connect('organizations_index', '/organization', action='index')
+        m.connect('organizations_index', '/unit', action='index')
         m.connect('/organization/list', action='list')
         m.connect('/organization/new', action='new')
         m.connect('/organization/{action}/{id}',

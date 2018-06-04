@@ -2,7 +2,7 @@
 
   <div class="inner text-white" style="display:inline;">
 	{% block stats_group %}
-        <a href="{{ h.url_for(controller='package', action='search') }}">
+        <a href="{{ h.url_for(controller='package', action='search') }}" style="color:yellow;">
           <b>{{ h.SI_number_span(stats.dataset_count) }}</b>
          {{ _('dataset') if stats.dataset_count == 1 else _('DATASET') }}
         </a>

@@ -30,7 +30,7 @@ header .top-header .left-top span{
 	width:20px;
 	height:20px;
 	float:left;
-	background:#FFC807 url('https://kemenkeu.go.id/images/icon/ico-home.svg')center center no-repeat;
+	background:#FFC807 url('https://www.kemenkeu.go.id/images/icon/ico-home.svg')center center no-repeat;
 	background-size:80% auto;
 	border-radius:50%;
 }
@@ -50,7 +50,7 @@ header .top-header .right-top span font{
 	width:20px;
 	height:20px;
 	float:left;
-	background:#0863AA url('https://kemenkeu.go.id/images/icon/ico-phone.svg')center center no-repeat;
+	background:#0863AA url('https://www.kemenkeu.go.id/images/icon/ico-phone.svg')center center no-repeat;
 	background-size:100% auto;
 	border-radius:50%;
 	margin-right:5px;
@@ -85,7 +85,7 @@ header .menu-header .menu-link .search-header{
 
 header .menu-header .menu-link nav.cl-effect-4 span:hover{
 	border:1px solid #ccc;
-	background:#ededed url('https://kemenkeu.go.id/images/icon/mobile-nav.svg');
+	background:#ededed url('https://www.kemenkeu.go.id/images/icon/mobile-nav.svg');
 	background-size:auto 100%;
 	cursor:pointer;
 }
@@ -98,7 +98,7 @@ header .menu-header .menu-link nav.cl-effect-4 span{
 	top: -94px;
 	width: 63px;
 	height: 50px;
-	background:url('https://kemenkeu.go.id/images/icon/mobile-nav.svg');
+	background:url('https://www.kemenkeu.go.id/images/icon/mobile-nav.svg');
 	background-size:auto 100%;
 	margin-top: 22px;
 	border-radius:5px;
@@ -338,35 +338,35 @@ footer .bottom-footer .social .hi-icon-effect-1a .hi-icon:hover:after {
 	opacity: 1;
 }
 footer .bottom-footer .social .hi-icon-effect-1 .hi-icon.hi-icon-fb{
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-fb.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-fb.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1b .hi-icon.hi-icon-fb:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-fb_hover.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-fb_hover.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1 .hi-icon.hi-icon-tw{
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-tw.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-tw.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1b .hi-icon.hi-icon-tw:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-tw_hover.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-tw_hover.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1 .hi-icon.hi-icon-yt{
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-yt.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-yt.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1b .hi-icon.hi-icon-yt:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-yt_hover.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-yt_hover.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1 .hi-icon.hi-icon-in{
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-in.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-in.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1b .hi-icon.hi-icon-in:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-in-hover.svg');
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-in-hover.svg');
 	background-size:100% auto;
 }
 footer .bottom-footer .social .hi-icon-effect-1b .hi-icon:after {
@@ -443,25 +443,25 @@ footer .bottom-footer .social .hi-icon-effect-1b .hi-icon:hover:after {
 #sticky-social a[class*="facebook"] span {background:#3b5998;}
 #sticky-social a[class*="facebook"],
 #sticky-social a[class*="facebook"]:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-fb.svg')center center no-repeat;
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-fb.svg')center center no-repeat;
 	background-size:25px auto;
 }
 #sticky-social a[class*="twitter"] span {background:#00aced;}
 #sticky-social a[class*="twitter"],
 #sticky-social a[class*="twitter"]:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-tw.svg')center center no-repeat;
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-tw.svg')center center no-repeat;
 	background-size:25px auto;
 }
 #sticky-social a[class*="instagram"] span {background:#dd4b39;}
 #sticky-social a[class*="instagram"],
 #sticky-social a[class*="instagram"]:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-in.svg')center center no-repeat;
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-in.svg')center center no-repeat;
 	background-size:25px auto;
 }
 #sticky-social a[class*="youtube"] span {background:#CA3737;}
 #sticky-social a[class*="youtube"],
 #sticky-social a[class*="youtube"]:hover {
-	background:#fff url('https://kemenkeu.go.id/images/icon/ico-yt.svg')center center no-repeat;
+	background:#fff url('https://www.kemenkeu.go.id/images/icon/ico-yt.svg')center center no-repeat;
 	background-size:25px auto;
 }
 
@@ -477,7 +477,7 @@ footer .bottom-footer .social .hi-icon-effect-1b .hi-icon:hover:after {
     right: 20px;
     opacity: 0.6;
     border-radius: 50%;
-    background:#fff url(https://kemenkeu.go.id/images/icon/ico-arrow_top.svg)center center no-repeat;
+    background:#fff url(https://www.kemenkeu.go.id/images/icon/ico-arrow_top.svg)center center no-repeat;
     background-size: 24px auto;
 	border: 2px solid #000;
 }
@@ -683,35 +683,35 @@ footer .bottom-footer .social .hi-icon-effect-1b .hi-icon:hover:after {
 	opacity: 1;
 }
 .social-news .hi-icon-effect-1 .hi-icon.hi-icon-fb{
-	background:#02275d url('https://kemenkeu.go.id/images/icon/white-ico-fb.svg');
+	background:#02275d url('https://www.kemenkeu.go.id/images/icon/white-ico-fb.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1b .hi-icon.hi-icon-fb:hover {
-	background:#3c5a99 url('https://kemenkeu.go.id/images/icon/white-ico-fb.svg');
+	background:#3c5a99 url('https://www.kemenkeu.go.id/images/icon/white-ico-fb.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1 .hi-icon.hi-icon-tw{
-	background:#02275d url('https://kemenkeu.go.id/images/icon/white-ico-tw.svg');
+	background:#02275d url('https://www.kemenkeu.go.id/images/icon/white-ico-tw.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1b .hi-icon.hi-icon-tw:hover {
-	background:#439cd6 url('https://kemenkeu.go.id/images/icon/white-ico-tw.svg');
+	background:#439cd6 url('https://www.kemenkeu.go.id/images/icon/white-ico-tw.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1 .hi-icon.hi-icon-yt{
-	background:#02275d url('https://kemenkeu.go.id/images/icon/white-ico-yt.svg');
+	background:#02275d url('https://www.kemenkeu.go.id/images/icon/white-ico-yt.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1b .hi-icon.hi-icon-yt:hover {
-	background:#ce1312 url('https://kemenkeu.go.id/images/icon/white-ico-yt.svg');
+	background:#ce1312 url('https://www.kemenkeu.go.id/images/icon/white-ico-yt.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1 .hi-icon.hi-icon-in{
-	background:#02275d url('https://kemenkeu.go.id/images/icon/white-ico-in.svg');
+	background:#02275d url('https://www.kemenkeu.go.id/images/icon/white-ico-in.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1b .hi-icon.hi-icon-in:hover {
-	background:#02275d url('https://kemenkeu.go.id/images/icon/ico-in-hover.svg');
+	background:#02275d url('https://www.kemenkeu.go.id/images/icon/ico-in-hover.svg');
 	background-size:100% auto;
 }
 .social-news .hi-icon-effect-1b .hi-icon:after {
@@ -773,8 +773,12 @@ height: 100%;
 /*end youtube responsive*/
 .judul{
  text-transform: uppercase;
- font-family: "Roboto-Bold";
+ font-family: "Roboto";
+ font-size: 50px;
+padding-top: 30px;
+line-height: 0.75;
 }
+
 .tematik-row {
   display:flex;
   justify-content:center;
@@ -833,7 +837,7 @@ border-left: 15px solid transparent;
 border-right: 15px solid transparent;
 margin: 10px auto;
 display: block;
-border-top: 15px solid #02275C;
+border-top: 15px solid #ffff00;
 }
 .flex-container {
   padding: 0;
@@ -873,4 +877,34 @@ homepage{
     background-size: 100% 100%!important;
     padding-top: 40px!important;
     background-position: center top!important;
+}
+.bg{
+/*background-image: url("../../../base/images/backgroundutama/home3.jpg") !important;*/
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center top;
+max-width: 100%;
+height: 550px;
+position: relative;
+}
+.sip {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 768px) {
+    .judul { 
+        text-transform: uppercase;
+ font-family: "Roboto";
+	font-size:20px;
+	line-height: 0.3;
+    }
+    .bg{
+	max-width: 100%;
+	height: auto;
+	}
+    .sip{
+	top: 40%;
+	}
 }
