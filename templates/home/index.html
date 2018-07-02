@@ -32,12 +32,11 @@ function carousel() {
 </script>
 </div>
 	<div class="container sip">
-	<h1 class="judul text-white">Portal Data</h1>
-	<h1 class="judul text-white">APBN Kementerian Keuangan</h1><br/>
+	<h1 class="judul text-white-judul">Portal Data APBN Kementerian Keuangan</h1><br/>
 	<h4 class="text-white"> TEMUKAN
 	{% snippet 'home/snippets/stats2.html' %} DI SINI.</h4>
 	<div class="panah"></div>
-	<form id="dataset-search-form" action="/dataset" class="search-form" method="get" data-module="select-switch">
+	<form id="dataset-search-form" action="/dataset" class="search-form" method="get" data-module="select-switch" style=" border-bottom: none;">
 	    <div class="search-input control-group search-giant">
 	      <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="Cari Dataset...." style="width:80%;">      
 	      <button type="submit" value="search">
@@ -49,43 +48,43 @@ function carousel() {
 	</div>
 	</div>
 	<div class="container">
-	<div class="box stats" style="margin-top:50px;">
+	<div class="box stats" style="margin-top:105px;">
 	<div class="flex-container" style=" text-transform: uppercase;">
+		<div class="flex-item">
+                        <a href="group/apbn"><img width="60" src="/base/icon/apbn.png">
+                        <h5 class="tematik-title">APBN <span class="tooltiptext">Anggaran Pendapatan dan Belanja Negara</span> </h5></a>
+                </div>
 		<div class="flex-item zoom">
 			<a href="group/asumsi-dasar-ekonomi-makro"><img width="60" src="/base/icon/asumsi.png">            
-			<h5 class="tematik-title">Asumsi<span class="tooltiptext">asumsi dasar ekonomi makro</span></h5></a>
+			<h5 class="tematik-title">Asumsi<span class="tooltiptext">Asumsi Dasar Ekonomi Makro</span></h5></a>
 		</div>
 		<div class="flex-item">
 			<a href="group/belanja-pemerintah-pusat"><img width="60" src="/base/icon/bpp.png">
 			<h5 class="tematik-title">BPP<span class="tooltiptext">Belanja Pemerintah Pusat</span></h5></a>
 		</div>
 		<div class="flex-item">
-			<a href="group/ekonomi"><img width="60" src="/base/icon/ekonomi.png">
-			<h5 class="tematik-title">Ekonomi <span class="tooltiptext">Kumpulan Data Ekonomi</span> </h5></a>
-		</div>
-		<div class="flex-item">
-                        <a href="group/energi"><img width="60" src="/base/icon/energi.png">
-                        <h5 class="tematik-title">Energi <span class="tooltiptext">Kumpulan Data Energi</span></h5></a>
-                </div>
-		<div class="flex-item">
-                        <a href="group/infrastruktur"><img width="60" src="/base/icon/infrastruktur.png">
-                        <h5 class="tematik-title">Infrastruktur <span class="tooltiptext">Kumpulan Data Infrastruktur</span></h5></a>
-                </div>
-		<div class="flex-item">
-                        <a href="group/kemiskinan"><img width="60" src="/base/icon/kemiskinan.png">
-                        <h5 class="tematik-title">Kemiskinan <span class="tooltiptext">Kumpulan Data Kemiskinan</span></h5></a>
+                        <a href="group/pendidikan"><img width="60" src="/base/icon/pendidikan.png">
+                        <h5 class="tematik-title">Pendidikan <span class="tooltiptext">Kumpulan Data Pendidikan</span></h5></a>
                 </div>
 		<div class="flex-item">
                         <a href="group/kesehatan"><img width="60" src="/base/icon/kesehatan.png">
                         <h5 class="tematik-title">Kesehatan <span class="tooltiptext">Kumpulan Data Kesehatan</span></h5></a>
                 </div>
 		<div class="flex-item">
-                        <a href="group/pangan"><img width="60" src="/base/icon/pangan.png">
-                        <h5 class="tematik-title">Pangan <span class="tooltiptext">Kumpulan Data Pangan</span></h5></a>
+                        <a href="group/kemiskinan"><img width="60" src="/base/icon/kemiskinan.png">
+                        <h5 class="tematik-title">Kemiskinan <span class="tooltiptext">Kumpulan Data Kemiskinan</span></h5></a>
+                </div>
+		 <div class="flex-item">
+                        <a href="group/infrastruktur"><img width="60" src="/base/icon/infrastruktur.png">
+                        <h5 class="tematik-title">Infrastruktur <span class="tooltiptext">Kumpulan Data Infrastruktur</span></h5></a>
                 </div>
 		<div class="flex-item">
-                        <a href="group/pendidikan"><img width="60" src="/base/icon/pendidikan.png">
-                        <h5 class="tematik-title">Pendidikan <span class="tooltiptext">Kumpulan Data Pendidikan</span></h5></a>
+                        <a href="group/energi"><img width="60" src="/base/icon/energi.png">
+                        <h5 class="tematik-title">Energi <span class="tooltiptext">Kumpulan Data Energi</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/pangan"><img width="60" src="/base/icon/pangan.png">
+                        <h5 class="tematik-title">Pangan <span class="tooltiptext">Kumpulan Data Pangan</span></h5></a>
                 </div>
 		<div class="flex-item">
                         <a href="group/transfer-ke-daerah-dan-dana-desa"><img width="60" src="/base/icon/tkdd.png">

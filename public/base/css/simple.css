@@ -1,3 +1,5 @@
+.lang-icon { margin:0px !importat; }
+
 @font-face {
     font-family: "Roboto-bold";
 	src: url("/base/fonts/Roboto-Bold.ttf");
@@ -774,7 +776,7 @@ height: 100%;
 .judul{
  text-transform: uppercase;
  font-family: "Roboto";
- font-size: 50px;
+ font-size: 2.9em;
 padding-top: 30px;
 line-height: 0.75;
 }
@@ -826,6 +828,9 @@ position: relative;
 .tematik-title:hover .tooltiptext {
     visibility: visible;
       transform: translate3d(0px, 0px, 0px);
+}
+.text-white-judul{
+color:#fff;
 }
 .text-white{
 color:#fff;
@@ -897,8 +902,8 @@ transform: translate(-50%, -50%);
     .judul { 
         text-transform: uppercase;
  font-family: "Roboto";
-	font-size:20px;
 	line-height: 0.3;
+font-size:1.2em
     }
     .bg{
 	max-width: 100%;
@@ -907,4 +912,18 @@ transform: translate(-50%, -50%);
     .sip{
 	top: 40%;
 	}
+	.text-white{
+	margin-top: 78px;
+font-size: 10px;
+color: black;
+}
+.text-white-judul{
+	margin-top: 80px;
+}
+.panah{
+border-top : 15px solid #01347C;
+}
+a .inner {
+color: #01347C !important;;
+}
 }
