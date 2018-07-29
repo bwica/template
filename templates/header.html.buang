@@ -2,14 +2,14 @@
 {% block header_account %}
 {% endblock %}
 
-<header style="margin-bottom:0px;">
+<header>
     <div class="top-header">
         <div class="info-headers">
-        <div class="container">
-            <div class="left-top">
+        <div class="row">
+            <div class="left-top container-fluid">
                 <span></span>
                 <font>   
-                        Jl. Dr.Wahidin Raya No 1, Jakarta
+                        Jl. Dr.Wahidin Raya No 1 Jakarta 10710
                 </font>
             </div>
             <div class="right-top">
@@ -36,24 +36,31 @@
         </div>
         </div>
     </div>
-    <nav id="menu-1" class="mega-menu hidden-sm hidden-xs" data-color="#f00">
-        <section class="menu-list-items hidden-xs hidden-sm">
-            <div class="container hidden-xs hidden-sm">
-                <ul class="menu-logo hidden-xs hidden-sm">
+    <nav id="menu-1" class="mega-menu" data-color="#f00">
+        <section class="menu-list-items">
+            <div class="container">
+                <ul class="menu-logo">
                     <li>
                         <a href="/">
                             <img src="https://www.kemenkeu.go.id/media/6277/logo-atas.png">
                         </a>
+		  	<div id="ikeh" class="container-button icon">
+                            <div class="icon">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                        </div>
 		   </li>
                 </ul>
-                <ul class="menu-links hidden-xs hidden-sm" style="display: none; max-height: 400px; overflow: auto; text-transform:uppercase;">
+                <ul class="menu-links" style="display: none; max-height: 400px; overflow: auto; text-transform:uppercase;">
                     <li class="hoverTrigger">
                         <a href="/dataset">Dataset<div class="mobileTriggerButton"></div></a>
                     </li>
                     <li class="hoverTrigger">
                         <a href="/pages/unduh">Unduh<div class="mobileTriggerButton"></div></a>
                     </li>
-                   <!-- <li class="hoverTrigger">
+                    <li class="hoverTrigger">
                         <a target="_blank" href="https://www.peta.data-apbn.kemenkeu.go.id">Peta Anggaran<div class="mobileTriggerButton"></div></a>
                     </li>
                     <li class="hoverTrigger">
@@ -61,41 +68,15 @@
                     </li>
 		    <li class="hoverTrigger">
 		    <a target="_blank" href="#">Partisipasi Publik<div class="mobileTriggerButton"></div></a>
-		    </li>-->	
+		    </li>	
                     <li class="hoverTrigger">
                         <a href="/about">Tentang<div class="mobileTriggerButton"></div></a>
                     </li>
                 </ul>
                 <div class="mm-page" style="display:none;"></div>
             </div>
-	</script>
         </section>
     </nav>
 </header>
-<div class="hidden-xs hidden-sm" style="height:110px !important;">&nbsp;</div>
-<div class="hidden-md hidden-lg" style="height:10px !important;">&nbsp;</div>
 
-<div class="container-fluid hidden-md hidden-lg">
-    <a href="http://dja2-labs.ericsn.ltd"><img src="https://www.kemenkeu.go.id/media/6277/logo-atas.png" style="height:50px;"></a>
- 	<div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="/">Beranda</a>
-                <a href="/dataset">Dataset</a>
-                <a href="/pages/unduh">Unduh</a>
-                <!--<a href="https://www.peta.data-apbn.kemenkeu.go.id">Peta Anggaran</a>
-                <a href="http://query.data-apbn.kemenkeu.go.id">Query Data</a>
-                <a href="#">Partisipasi Publik</a>-->
-                <a href="/about">Tentang</a>
-            </div>
-                <span class="trig hidden-xs" onclick="openNav()">&#9776;</span>
-        <script>
-        function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
-</div><br/>
 {% endblock %}

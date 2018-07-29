@@ -18,7 +18,6 @@
 {% block content_primary_nav %}
   {{ h.build_nav_icon('dataset_read', _(' Dataset '), id=pkg.name) }}
   {{ h.build_nav_icon('dataset_groups', _('Tematik'), id=pkg.name) }}
-  {{ h.build_nav_icon('dataset_activity', _('Aktivitas'), id=pkg.name) }}
 {% endblock %}
 
 {% block primary_content_inner %}
@@ -39,10 +38,6 @@
 {% block secondary_content %}
 
   {% block secondary_help_content %}{% endblock %}
-
-  {% block package_info %}
-    {% snippet 'package/snippets/info.html', pkg=pkg %}
-  {% endblock %}
 
   {% block package_organization %}
     {% if pkg.organization %}

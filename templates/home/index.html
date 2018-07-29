@@ -7,89 +7,96 @@
 
 {% block content %}
   <style>
-    img { margin:10px; }
+    a { text-decoration:none !important; }
+    #tematik-title { margin-top:-8px !important; }
+    #cari { background: #02275d !important; }
+    #helpBlock { text-align:left; }
+    .pd-10 { padding:10px; }
+    .wd-100 { width:100% !important; }
+    #snip { color:#000; text-align:center; }
+    .t-bl { color:#000; }
+    #imager { background:url('https://kemenkeu.go.id/media/9956/agsliderbanner.jpg');height:500px; }
   </style>
-  <div class="homepage layout-{{ homepage_style }}">
-	<center>
-	<div class="bg">
-	<img class="bg mySlides" src="/base/images/backgroundutama/home.jpg" style="width:100%; margin-left:0px;">
-	  <img class="bg mySlides" src="/base/images/backgroundutama/home2.jpg" style="width:100%; margin-left:0px;">
-		<script>
-var myIndex = 0;
-carousel();
+  <div class="homepage layout-{{ homepage_style }}"></div>
+  <div class="container">
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
-</script>
-</div>
-	<div class="container sip">
-	<h1 class="judul text-white-judul">Portal Data APBN Kementerian Keuangan</h1><br/>
-	<h4 class="text-white"> TEMUKAN
-	{% snippet 'home/snippets/stats2.html' %} DI SINI.</h4>
-	<div class="panah"></div>
-	<form id="dataset-search-form" action="/dataset" class="search-form" method="get" data-module="select-switch" style=" border-bottom: none;">
-	    <div class="search-input control-group search-giant">
-	      <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="Cari Dataset...." style="width:80%;">      
-	      <button type="submit" value="search">
-	        <i class="fa fa-search" style=" margin-right: 90px;"></i>
-	        <span>Kirim</span>
-	      </button>      
+	<br/>
+	<div class="jumbotron hidden-sm hidden-xs" id="imager"></div>
+
+  </div>
+  <div class="container">
+	<h1 id="snip">PORTAL DATA APBN</h1>
+	<h4 id='snip'>{% snippet 'home/snippets/stats2.html' %}</h4>
+	<form class="form-horizontal" method="GET" action="/dataset">
+	  <div class="form-group form-group-lg container-fluid">
+	    <div class="col-xs-12 col-sm-12 col-md-10 pd-10">
+	      <input class="form-control" type="text" name="q" id="formGroupInputLarge" placeholder="Temukan disini">
+	      <span id="helpBlock" class="help-block hidden-sm hidden-xs">Masukan kata kunci berupa nama tematik, instansi, dan atau judul dataset.</span>
 	    </div>
- 	</form>
-	</div>
-	</div>
-	<div class="container">
-	<div class="box stats" style="margin-top:105px;">
+	    <div class="col-sm-12 col-xs-12 col-md-2 pd-10">
+	      <input type="submit" class="btn btn-success btn-lg col-sm-12 wd-100 hidden-sm hidden-xs" id="cari" value="Cari">
+	      <input type="submit" class="btn btn-success btn-lg col-sm-12 wd-100 hidden-md hidden-lg" id="cari" value="Lakukan Pencarian">
+	    </div>
+	  </div>
+	</form>
+
+	<br/>
+
+	<div class="row">
+	<div class="container-fluid">
 	<div class="flex-container" style=" text-transform: uppercase;">
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/apbn"><img width="60" src="/base/icon/apbn.png">
-                        <h5 class="tematik-title">APBN <span class="tooltiptext">Anggaran Pendapatan dan Belanja Negara</span> </h5></a>
+                        <h5 class="tematik-title">APBN <span class="tooltiptext hidden-xs hidden-sm">Anggaran Pendapatan dan Belanja Negara</span> </h5></a>
                 </div>
-		<div class="flex-item zoom">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2 zoom">
 			<a href="group/asumsi-dasar-ekonomi-makro"><img width="60" src="/base/icon/asumsi.png">            
-			<h5 class="tematik-title">Asumsi<span class="tooltiptext">Asumsi Dasar Ekonomi Makro</span></h5></a>
+			<h5 class="tematik-title">Asumsi<span class="tooltiptext hidden-xs hidden-sm">Asumsi Dasar Ekonomi Makro</span></h5></a>
 		</div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
 			<a href="group/belanja-pemerintah-pusat"><img width="60" src="/base/icon/bpp.png">
-			<h5 class="tematik-title">BPP<span class="tooltiptext">Belanja Pemerintah Pusat</span></h5></a>
+			<h5 class="tematik-title">BPP<span class="tooltiptext hidden-xs hidden-sm">Belanja Pemerintah Pusat</span></h5></a>
 		</div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/pendidikan"><img width="60" src="/base/icon/pendidikan.png">
-                        <h5 class="tematik-title">Pendidikan <span class="tooltiptext">Kumpulan Data Pendidikan</span></h5></a>
+                        <h5 class="tematik-title">Pendidikan <span class="tooltiptext hidden-xs hidden-sm">Anggaran Pendidikan</span></h5></a>
                 </div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/kesehatan"><img width="60" src="/base/icon/kesehatan.png">
-                        <h5 class="tematik-title">Kesehatan <span class="tooltiptext">Kumpulan Data Kesehatan</span></h5></a>
+                        <h5 class="tematik-title">Kesehatan <span class="tooltiptext hidden-xs hidden-sm">Anggaran Kesehatan</span></h5></a>
                 </div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/kemiskinan"><img width="60" src="/base/icon/kemiskinan.png">
-                        <h5 class="tematik-title">Kemiskinan <span class="tooltiptext">Kumpulan Data Kemiskinan</span></h5></a>
+                        <h5 class="tematik-title">Kemiskinan <span class="tooltiptext hidden-xs hidden-sm">Anggaran Kemiskinan</span></h5></a>
                 </div>
-		 <div class="flex-item">
+		 <div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/infrastruktur"><img width="60" src="/base/icon/infrastruktur.png">
-                        <h5 class="tematik-title">Infrastruktur <span class="tooltiptext">Kumpulan Data Infrastruktur</span></h5></a>
+                        <h5 class="tematik-title">Infrastruktur <span class="tooltiptext hidden-xs hidden-sm">Anggaran Infrastruktur</span></h5></a>
                 </div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/energi"><img width="60" src="/base/icon/energi.png">
-                        <h5 class="tematik-title">Energi <span class="tooltiptext">Kumpulan Data Energi</span></h5></a>
+                        <h5 class="tematik-title">Energi <span class="tooltiptext hidden-xs hidden-sm">Anggaran Energi</span></h5></a>
                 </div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/pangan"><img width="60" src="/base/icon/pangan.png">
-                        <h5 class="tematik-title">Pangan <span class="tooltiptext">Kumpulan Data Pangan</span></h5></a>
+                        <h5 class="tematik-title">Pangan <span class="tooltiptext hidden-xs hidden-sm">Anggaran Ketahanan Pangan</span></h5></a>
                 </div>
-		<div class="flex-item">
+		<div class="flex-item col-md-2 col-sm-3 col-xs-6 col-lg-2">
                         <a href="group/transfer-ke-daerah-dan-dana-desa"><img width="60" src="/base/icon/tkdd.png">
-                        <h5 class="tematik-title">TKDD<span class="tooltiptext">Transfer ke Daerah dan Dana Desa</span> </h5></a>
+                        <h5 class="tematik-title">TKDD<span class="tooltiptext hidden-xs hidden-sm">Transfer ke Daerah dan Dana Desa</span> </h5></a>
 		</div>
+		<div class="col-md-2 col-sm-3 hidden-xs">
+
+		</div>
+		<div class="col-md-2 col-sm-3 hidden-xs">
+
+		</div>
+                <div class="col-sm-3 hidden-xs hidden-lg hidden-md">
+
+                </div>
+                <div class="col-sm-3 hidden-xs hidden-lg hidden-md">
+
+                </div>
 	</div>
 	</div>
 	</div>

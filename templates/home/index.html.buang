@@ -1,0 +1,104 @@
+{% extends "page.html" %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+{% set homepage_style = ( g.homepage_style or '1' ) %}
+
+
+{% block maintag %}{% endblock %}
+{% block toolbar %}{% endblock %}
+
+{% block content %}
+  <style>
+    img { margin:10px; }
+  </style>
+  <div class="homepage layout-{{ homepage_style }}">
+	<center>
+	<div class="bg">
+	<img class="bg mySlides" src="/base/images/backgroundutama/home.jpg" style="width:100%; margin-left:0px;">
+	<!--<img class="bg mySlides" src="/base/images/backgroundutama/home2.jpg" style="width:100%; margin-left:0px;">-->
+	<!--<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>-->
+</div>
+<div class="container sip">
+</div>
+	<div class="container">
+	<div class="container sip">
+	<h1 class="judul text-white-judul">Portal Data APBN</h1><br/>
+        <h4 class="text-white"> Terdapat
+        {% snippet 'home/snippets/stats2.html' %}</h4>
+        <div class="panah"></div>
+        <form id="dataset-search-form" action="/dataset" class="search-form" method="get" data-module="select-switch" style=" border-botto$
+            <div class="search-input control-group search-giant">
+              <input type="text" class="search" name="q" value="" autocomplete="off" placeholder="Cari Dataset...." style="width:80%;">   $
+              <button type="submit" value="search">
+                <i class="fa fa-search" style=" margin-right: 90px;"></i>
+                <span>Kirim</span>
+              </button>
+            </div>
+        </form>
+	</div>
+	</div>
+	<div class="container">
+	<div class="box stats" style="margin-top:55px;">
+	<div class="flex-container" style=" text-transform: uppercase;">
+		<div class="flex-item">
+                        <a href="group/apbn"><img width="60" src="/base/icon/apbn.png">
+                        <h5 class="tematik-title">APBN <span class="tooltiptext">Anggaran Pendapatan dan Belanja Negara</span> </h5></a>
+                </div>
+		<div class="flex-item zoom">
+			<a href="group/asumsi-dasar-ekonomi-makro"><img width="60" src="/base/icon/asumsi.png">            
+			<h5 class="tematik-title">Asumsi<span class="tooltiptext">Asumsi Dasar Ekonomi Makro</span></h5></a>
+		</div>
+		<div class="flex-item">
+			<a href="group/belanja-pemerintah-pusat"><img width="60" src="/base/icon/bpp.png">
+			<h5 class="tematik-title">BPP<span class="tooltiptext">Belanja Pemerintah Pusat</span></h5></a>
+		</div>
+		<div class="flex-item">
+                        <a href="group/pendidikan"><img width="60" src="/base/icon/pendidikan.png">
+                        <h5 class="tematik-title">Pendidikan <span class="tooltiptext">Dataset Pendidikan</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/kesehatan"><img width="60" src="/base/icon/kesehatan.png">
+                        <h5 class="tematik-title">Kesehatan <span class="tooltiptext">Dataset Kesehatan</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/kemiskinan"><img width="60" src="/base/icon/kemiskinan.png">
+                        <h5 class="tematik-title">Kemiskinan <span class="tooltiptext">Dataset Kemiskinan</span></h5></a>
+                </div>
+		 <div class="flex-item">
+                        <a href="group/infrastruktur"><img width="60" src="/base/icon/infrastruktur.png">
+                        <h5 class="tematik-title">Infrastruktur <span class="tooltiptext">Dataset Infrastruktur</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/energi"><img width="60" src="/base/icon/energi.png">
+                        <h5 class="tematik-title">Energi <span class="tooltiptext">Dataset Energi</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/pangan"><img width="60" src="/base/icon/pangan.png">
+                        <h5 class="tematik-title">Pangan <span class="tooltiptext">Dataset Pangan</span></h5></a>
+                </div>
+		<div class="flex-item">
+                        <a href="group/transfer-ke-daerah-dan-dana-desa"><img width="60" src="/base/icon/tkdd.png">
+                        <h5 class="tematik-title">TKDD<span class="tooltiptext">Transfer ke Daerah dan Dana Desa</span> </h5></a>
+		</div>
+	</div>
+	</div>
+	</div>
+      <br/><br/><br/>
+      </center><br/>
+      </div>
+  </div>
+{% endblock %}

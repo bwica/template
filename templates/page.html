@@ -29,7 +29,7 @@
           {% endblock %}
 
           {% block toolbar %}
-            <div class="toolbar">
+            <div class="toolbar hidden-xs hidden-sm">
               {% block breadcrumb %}
                 {% if self.breadcrumb_content() | trim %}
                   <ol class="breadcrumb">
@@ -41,7 +41,7 @@
             </div>
           {% endblock %}
 
-          <div class="row wrapper{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' %} no-nav{% endif %}">
+          <div style="background:white;" class="row {% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' %} no-nav{% endif %}">
 
             {#
             The pre_primary block can be used to add content to before the
@@ -51,7 +51,7 @@
             {% endblock %}
 
             {% block primary %}
-              <div class="primary span9">
+              <div class="primary col-md-9 col-lg-9 col-xs-12 col-sm-12">
                 {#
                 The primary_content block can be used to add content to the page.
                 This is the main block that is likely to be used within a template.
@@ -64,7 +64,7 @@
                   {% endblock %}
                 #}
                 {% block primary_content %}
-                  <article class="module">
+                  <article class="row">
                     {% block page_header %}
                       <header class="module-content page-header">
                         {% if self.content_action() | trim %}
@@ -77,7 +77,7 @@
                         </ul>
                       </header>
                     {% endblock %}
-                    <div class="module-content">
+                    <div class="container-fluid">
                       {% if self.page_primary_action() | trim %}
                         <div class="page_primary_action">
                           {% block page_primary_action %}{% endblock %}
@@ -92,7 +92,7 @@
             {% endblock %}
 
             {% block secondary %}
-              <aside class="secondary span3">
+              <aside class="secondary col-md-3 col-lg-3 col-sm-12 col-xs-12">
                 {#
                 The secondary_content block can be used to add content to the
                 sidebar of the page. This is the main block that is likely to be

@@ -1,0 +1,40 @@
+<a href="#"><div id="scroll" style="display: block;">&nbsp;</div></a>
+<footer>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="bottom-footer-left hidden-xs hidden-sm">
+               <span style="margin-right:80px;"> <img src="/base/images/logo_portal.png" onerror="this.onerror=null; this.src='/base/images/logo_portal.png'" style=" margin-top: 50px;width: 30%;margin-left: 45px;" class="imgdesklogo">
+		<img src="/base/images/logo_portal.png" onerror="this.onerror=null; this.src='/base/images/logo_portal.png'" style="margin-top:-16px;display:none;max-width:100px;margin-left:80px;" class="imgmoblogo"></span>
+                <font><br><br><br>
+                    Hak Cipta Kementerian Keuangan Republik Indonesia<br>
+                    Direktorat Jenderal Anggaran<br>
+		    Gedung Sutikno Slamet Lt. 13<br>
+                    Jl. Dr.Wahidin Raya No 1 Jakarta 10710<br>
+                    Telp: 021-3505663 Fax: 021-3505659<br>
+		    <div>
+                        <h3 style="text-align:center;">
+                            <div style="text-align:center;"></div>
+                        </h3>
+                    </div>
+                </font>
+            </div>
+            <div class="social">
+                <h3>Ikuti Kami</h3>
+                <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1b">
+                    <a target="_blank" href="http://www.facebook.com/portaldataAPBN" class="hi-icon hi-icon-fb"></a>
+                    <a target="_blank" href="http://www.twitter.com/PortaldataAPBN" class="hi-icon hi-icon-tw"></a>
+                    <!--<a href="http://youtube.com/KemenkeuRI" class="hi-icon hi-icon-yt"></a>-->
+                    <a target="_blank" href="https://www.instagram.com/portaldataapbn_" class="hi-icon hi-icon-in"></a>
+                </div><br/>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div
+</footer>
+
+<script type="text/javascript">
+if(document.getElementsByClassName("page-heading")[0].innerHTML == "Unduh"){
+	var eloader = "<iframe width='100%' height='300' src='https://drive.google.com/embeddedfolderview?id=1ida5mfyzvc-yVD8XhO_moJ3R93qfqSD3#list'>Sedang mempersiapkan dokumen ....</iframe>";
+	document.getElementsByClassName("ckanext-pages-content")[0].innerHTML = eloader;
+}
+</script>

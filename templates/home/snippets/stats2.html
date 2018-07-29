@@ -1,10 +1,15 @@
 {% set stats = h.get_site_statistics() %}
-
-  <div class="inner text-white" style="display:inline;">
 	{% block stats_group %}
-        <a href="{{ h.url_for(controller='package', action='search') }}" style="color:yellow;">
+        <a href="{{ h.url_for(controller='package', action='search') }}" class="t-bl">
           <b>{{ h.SI_number_span(stats.dataset_count) }}</b>
-         {{ _('dataset') if stats.dataset_count == 1 else _('DATASET') }}
+         {{ _('dataset') if stats.dataset_count == 1 else _('DATASET ') }}
+        </a>|
+       <a href="{{ h.url_for(controller='organization', action='index') }}" style="display:inline;" class="t-bl">
+          <b>{{ h.SI_number_span(stats.organization_count) }}</b>
+          {{ _('Unit') if stats.organization_count == 1 else _('UNIT') }} 
+        </a>| 
+        <a href="{{ h.url_for(controller='group', action='index') }}" style="display: inline;" class="t-bl">
+          <b>{{ h.SI_number_span(stats.group_count) }}</b>
+          {{ _('group') if stats.group_count == 1 else _('TEMATIK') }}
         </a>
 	{% endblock %}
-  </div>
